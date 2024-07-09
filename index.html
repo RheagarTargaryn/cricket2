@@ -86,13 +86,23 @@
 
         .container ul {
             list-style-type: none;
-            padding-left: 20px;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .container ul li {
-            font-size: 16px;
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .container ul li img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             margin-bottom: 10px;
-            color: #666;
         }
 
         form {
@@ -166,11 +176,26 @@
 <div class="container" id="products">
     <h2>Our Products</h2>
     <ul>
-        <li>Cricket Bats</li>
-        <li>Cricket Balls</li>
-        <li>Protective Gear (Pads, Gloves, Helmets)</li>
-        <li>Clothing (Jerseys, Pants)</li>
-        <li>Training Accessories</li>
+        <li>
+            <img src="cricket_bats.jpg" alt="Cricket Bats">
+            <p>Cricket Bats</p>
+        </li>
+        <li>
+            <img src="cricket_balls.jpg" alt="Cricket Balls">
+            <p>Cricket Balls</p>
+        </li>
+        <li>
+            <img src="protective_gear.jpg" alt="Protective Gear">
+            <p>Protective Gear (Pads, Gloves, Helmets)</p>
+        </li>
+        <li>
+            <img src="cricket_clothing.jpg" alt="Cricket Clothing">
+            <p>Clothing (Jerseys, Pants)</p>
+        </li>
+        <li>
+            <img src="training_accessories.jpg" alt="Training Accessories">
+            <p>Training Accessories</p>
+        </li>
     </ul>
 </div>
 
