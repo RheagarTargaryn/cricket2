@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script
-src='//in.fw-cdn.com/30185261/117744.js'
-chat='true'>
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Items Store</title>
@@ -21,24 +17,27 @@ chat='true'>
             line-height: 1.6;
             background-color: #f8f8f8;
             color: #333;
+            margin: 0;
         }
 
         header {
             background-color: #fff;
-            padding: 20px 0;
-            text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px 0;
+            text-align: center;
         }
 
         header h1 {
             font-size: 28px;
             font-weight: bold;
             color: #333;
+            margin-bottom: 10px;
         }
 
         nav {
             text-align: center;
-            margin-top: 10px;
+            background-color: #f0f0f0;
+            padding: 10px 0;
         }
 
         nav a {
@@ -48,10 +47,13 @@ chat='true'>
             color: #333;
             border-radius: 4px;
             transition: background-color 0.3s ease;
+            background-color: transparent;
+            border: 1px solid transparent;
+            display: inline-block;
         }
 
         nav a:hover {
-            background-color: #f0f0f0;
+            background-color: #ddd;
         }
 
         .container {
@@ -67,11 +69,13 @@ chat='true'>
         .container h2 {
             font-size: 24px;
             margin-bottom: 10px;
+            color: #333;
         }
 
         .container p {
             font-size: 16px;
             line-height: 1.8;
+            color: #666;
         }
 
         .container ul {
@@ -82,6 +86,7 @@ chat='true'>
         .container ul li {
             font-size: 16px;
             margin-bottom: 5px;
+            color: #666;
         }
 
         form {
@@ -89,16 +94,18 @@ chat='true'>
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
         }
 
         label {
             font-weight: bold;
             margin-bottom: 5px;
             display: block;
+            color: #333;
         }
 
         input[type=text], input[type=email], input[type=date], textarea {
-            width: 100%;
+            width: calc(100% - 22px);
             padding: 10px;
             margin: 5px 0 15px 0;
             border: 1px solid #ccc;
@@ -110,16 +117,17 @@ chat='true'>
         input[type=submit] {
             background-color: #0070c9;
             color: #fff;
-            padding: 12px 20px;
+            padding: 12px 24px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
             transition: background-color 0.3s ease;
+            margin-top: 10px;
         }
 
         input[type=submit]:hover {
-            background-color: #005bab;
+            background-color: #005bac;
         }
     </style>
 </head>
@@ -153,7 +161,7 @@ chat='true'>
 
 <div class="container" id="contact">
     <h2>Contact Us</h2>
-    <form id="formcricketnew">
+    <form action="/submit-form.php" method="POST">
         <label for="company">Company Name</label>
         <input type="text" id="company" name="company" placeholder="Your company name.." required>
 
