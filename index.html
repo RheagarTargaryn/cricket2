@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script
+src='//au.fw-cdn.com/20835419/278633.js'
+chat='true'>
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Items Store</title>
@@ -201,15 +205,18 @@
 
 <div class="container" id="contact">
     <h2>Contact Us</h2>
-    <form action="/submit-form.php" method="POST">
+    <form id="cricket_store">
         <label for="company">Company Name</label>
         <input type="text" id="company" name="company" placeholder="Your company name.." required>
 
-        <label for="date">Date of Inquiry</label>
-        <input type="date" id="date" name="date" required>
+        <label for="dob">Visited Date</label>
+        <input type="date" id="dob" name="visited date" placeholder="YYYY-MM-DD" pattern="\d{4}-\d{2}-\d{2}" required>
 
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name.." required>
+        <label for="name">First Name</label>
+        <input type="text" id="name" name="name" placeholder="First name.." required>
+
+        <label for="name">Last Name</label>
+        <input type="text" id="name" name="name" placeholder="Last name.." required>
 
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" placeholder="Your email.." required>
