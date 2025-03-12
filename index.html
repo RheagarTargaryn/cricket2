@@ -207,25 +207,45 @@ chat='true'>
     <h2>Contact Us</h2>
     <form id="cricket_store">
         <label for="company">Company Name</label>
-        <input type="text" id="company" name="company" placeholder="Your company name.." required>
+        <input type="text" id="company" name="company_name" placeholder="Your company name.." required>
 
         <label for="dob">Visited Date</label>
         <input type="date" id="dob" name="visited date" placeholder="YYYY-MM-DD" pattern="\d{4}-\d{2}-\d{2}" required>
 
         <label for="name">First Name</label>
-        <input type="text" id="name" name="name" placeholder="First name.." required>
+        <input type="text" id="first_name" name="name" placeholder="First name.." required>
 
         <label for="name">Last Name</label>
-        <input type="text" id="name" name="name" placeholder="Last name.." required>
+        <input type="text" id="last_name" name="name" placeholder="Last name.." required>
 
         <label for="email">Email Address</label>
         <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+        <label for="email">Mobile</label>
+        <input type="email" id="mobile" name="mobile" placeholder="Your Mobile number" required>
 
         <label for="message">Message</label>
         <textarea id="message" name="message" placeholder="Write your message.." required></textarea>
 
         <input type="submit" value="Submit">
     </form>
+    
+<script>
+    function identify_call() {
+        var new_contact = {
+            "First name": document.getElementById("first_name").value,
+            "Last name": document.getElementById("last_name").value,
+            "Email": document.getElementById("email").value,
+            "Mobile": document.getElementById("mobile").value,
+            "company": {
+                "Name": document.getElementById("company_name").value
+            }
+        };
+        var identifier = document.getElementById("email").value; // Using email as identifier
+        fwcrm.identify(identifier, new_contact);
+    }
+</script>
+    
 </div>
 
 </body>
